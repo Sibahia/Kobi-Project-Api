@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primare-color: #FEFFFF;
+  --second-color: #17252A;
+  --third-color: #DEF2F1;
+  --bg-first: #3AAFA9;
+  --bg-second: #2B7A78;
+
+  --bgT: #f9f9f9;
+  --bgP: #ffffff;
+  --bgS: #191919;
+  --bgF: #0057ff;
+  --bgK: #014ee3;
+  --bgC: #d1d1d1;
+  --bgM: #a2a0a0;
+  --bgI: #e5ebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgT);
+}
+
+.container {
+  width: 460px;
+  padding: 20px;
+  height: 520px;
+  border-radius: 10px;
+  background: var(--bgP);
+  box-shadow: -3px 18px 21px 4px rgba(0,0,0,0.22);
+}
+
+.container .logo {
+  top: -70px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .logo .fa_user {
+  width: 8vh;
+  height: 6vh;
+  display: flex;
+  font-size: 8rem;
+  align-items: center;
+  color: var(--bgS);
+  justify-content: center;
+}
+
+.container .title {
+  padding: 20px;
+  color: var(--bgS);
+  text-align: center;
+}
+
+.ucontainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.ucontainer .cor {
+  padding: 15px;
+  position: relative;
+}
+
+.ucontainer .cor input {
+  color: #000;
+  width: 280px;
+  height: 45px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  background: var(--bgI);
+}
+
+.ucontainer .cor label {
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  color: var(--second-color);
+}
+
+.ucontainer .cor input:focus~label {
+  top: 3px;
+  transition: 0.5s;
+  border: 1px solid var(--bgF);
+}
+
+.ucontainer .btn {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ucontainer .btn button {
+  border: none;
+  font-size: 20px;
+  color: var(--bgT);
+  padding: 15px 100px;
+  background: var(--bgF);
+}
+
+.ucontainer .btn button:hover {
+  transition: 0.5s;
+  background: var(--bgK);
+}
+
+.ucontainer .msg {
+  display: flex;
+  color: var(--bgM);
+  justify-content: center;
+}
+
+.ucontainer .msg a {
+  padding: 0px 5px;
+  color: var(--bgF);
+  text-decoration: none;
+}
+
+.msg a:hover {
+  transition: 0.5s;
+  color: var(--bgK);
+}

@@ -1,0 +1,152 @@
+:root {
+  --second-color: #17252A;
+
+  --bgT: #f9f9f9;
+  --bgP: #ffffff;
+  --bgS: #191919;
+  --bgF: #0057ff;
+  --bgK: #014ee3;
+  --bgC: #d1d1d1;
+  --bgM: #a2a0a0;
+  --bgI: #e5ebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--bgT);
+}
+
+.container {
+  max-width: 45%;
+  max-height: 70%;
+  margin: auto;
+  display: block;
+  align-items: center;
+  background: var(--bgP);
+  justify-content: center;
+  box-shadow: -3px 18px 21px 4px rgba(0,0,0,0.22);
+}
+
+.container .logo {
+  top: -50px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.container .logo .fa_user {
+  width: 8vh;
+  height: 6vh;
+  display: flex;
+  font-size: 8rem;
+  color: var(--bgS);
+  align-items: center;
+  justify-content: center;
+}
+
+.container .title {
+  padding: 20px;
+  color: var(--bgS);
+  text-align: center;
+}
+
+.ucontainer {
+  padding: 25px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border
+}
+
+.ucontainer .col {
+  display: flex;
+  margin: 40px auto;
+  justify-content: center;
+}
+
+.ucontainer .cor {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ucontainer .col input {
+  color: #000;
+  width: 60%;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  background: var(--bgI);
+}
+
+.col input:valid,
+.col input:before {
+  border: 2px solid var(--bgF);
+  /* border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--bgF); */
+}
+
+.ucontainer .col label {
+  font-size: 15px;
+  transition: 0.5s;
+  color: var(--second-color);
+}
+
+/* .ucontainer input:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--bgF);
+} */
+
+.btn {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  border: none;
+  font-size: 20px;
+  color: var(--bgT);
+  padding: 15px 30%;
+  background-color: var(--bgF);
+}
+
+.btn button:hover {
+  transition: 0.5s;
+  background: var(--bgK);
+}
+
+.msg {
+  display: flex;
+  color: var(--bgM);
+  justify-content: center;
+}
+
+.msg a {
+  color: var(--bgF);
+  text-align: none;
+}
+
+.msg a:hover {
+  transition: 0.5s;
+  color: var(--bgK);
+}

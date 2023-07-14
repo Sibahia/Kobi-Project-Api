@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="stylesheet" href="/css/reg.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="head">
+
+            <div class="head-logo">
+              <a href="/"><h>Krog</h></a>
+            </div>
+            <div class="nav">
+              <div  class="sign_c">
+                  <a href="login"><button class="btn" name="button" id="sign"><i class="fas fa-user"></i></button></a>       
+              </div>
+              <div class="nav">
+                <ul>
+                  <li><a href=""><i class="fas fa-arrow-right-to-bracket"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        
+        </div>
+
+        <form action="">
+
+            <div class="box">
+                    <div class="lgnLogo box-icon">
+                      <i class="fas fa-circle-user fa_user"></i>
+                    </div>
+                <div class="box-inputs">
+                    <input type="text" id="regName" required>
+                    <span>Name</span>
+                </div>
+                <div class="box-inputs">
+                    <input type="text" id="regLastName" required>
+                    <span>Last Name</span>
+                </div>
+                <div class="box-inputs">
+                    <input type="text" id="regUsername" required>
+                    <span>Username</span>
+                </div>
+                <div class="box-inputs">
+                    <input type="password" id="regPassword" required>
+                    <span>Password</span>
+                </div>
+                <div class="box-buttons">
+                    <button type="submit" onclick="saveDates()">Sign In</button>
+                </div>
+            </div>
+
+        </form>
+    </body>
+    <script src="../index.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <div class="regContainer container">
+        <form action="" id="regForm">
+        <div class="regLogo logo">
+          <i class="fas fa-circle-user fa_user"></i>
+        </div>
+        <div class="regTitle title">
+          <h1>Sign In</h1>
+        </div>
+        <div class="regUser ucontainer">
+          <div class="regCol col cor">
+            <div class="regCol col cor">
+              <input type="text" placeholder="name" id="regName" required>
+            </div>
+            <div class="regCol col cor">
+              <input type="text" placeholder="last name" class="effect" id="regLastName" required>
+              <span class="focus-border"></span>
+            </div>
+            <!-- <input type="text" placeholder="name">
+            <input type="text" placeholder="last name"> -->
+          </div>
+          <div class="regCol col">
+            <input type="text" placeholder="username" id="regUsername" required>
+          </div>
+          <div class="regCol col">
+            <input type="password" placeholder="password" id="regPassword" required>
+          </div>
+          <div class="regButton btn col">
+            <button type="submit" name="button" onclick="saveDates()">Sign In</button>
+          </div>
+          <!-- <div class="regAccount msg">
+            <p></p>
+          </div> -->
+          </div>
+       </form>
+     </div>
+  </body>
+  <script src="../index.js"></script>
+</html>

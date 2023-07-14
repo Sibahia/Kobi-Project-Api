@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<header>
+  <title>Auth Sign In</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</header>
+<body>
+  <div class="head">
+
+    <div class="head-logo">
+      <a href="/"><h>Krog</h></a>
+    </div>
+    <div class="nav">
+      <div  class="sign_c">
+          <a href="login"><button class="btn" name="button" id="sign"><i class="fas fa-user"></i></button></a>       
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href=""><i class="fas fa-arrow-right-to-bracket"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <form action="">
+
+  <div class="box-lgn">
+    <div class="lgnLogo logo">
+      <i class="fas fa-circle-user fa_user"></i>
+    </div>
+  <div class="box-inputs">
+    <input type="text" id="lgnUsername" required>
+    <span>Username</span>
+  </div>
+  <div class="box-inputs">
+    <input type="password" id="lgnPassword" required>
+    <span>Password</span>
+  </div>
+  <div class="box-buttons">
+    <button type="submit" onclick="sendDates()">Log In</button>
+  </div>
+  <div class="box-accounts-msg">
+    <p>Don't have account?</p> <a href="register" id="msg-link">Signup now</a>
+  </div>
+  <div class="box-alert" id="box-alert">
+    <h4>ERROR</h4>
+    <p id="alert-p"></p>
+  </div>
+</div>
+
+</form>
+</body>
+<script src='/index.js'></script>
+</html>

@@ -97,21 +97,21 @@ function sendDates() {
   })
 };
 
-let tkn = window.localStorage.getItem('token')
+// let tkn = window.localStorage.getItem('token')
 
-fetch(`http://localhost:5500/auth/${tkn}`, {
-  method: 'GET',
-  mode: 'cors',
-  headers: {
-    'Content-Type': 'application/json',
-    Authorization: 'bearer' + localStorage.getItem('token')
-  }
-})
-.then(res => {
-  if (res.status) {
-    window.location.replace('/home')
-  }
-})
+// fetch(`http://localhost:5500/auth/${tkn}`, {
+//   method: 'GET',
+//   mode: 'cors',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     Authorization: 'bearer' + localStorage.getItem('token')
+//   }
+// })
+// .then(res => {
+//   if (res.status) {
+//     window.location.replace('/home')
+//   }
+// })
 
 // fetch ('http://localhost:5550/home', {
 //   method: 'GET',

@@ -38,7 +38,7 @@ module.exports = { auth }
         // console.log(`User --->>>[ ${userDatabase.username} \nPassword --->>>[ ${userDatabase.password}`);
 
         if (userDatabase.username == username && userDatabase.password == password) {
-            jwt.sign({ user: username, password: password }, 'bluelock', function(err, token) {
+            jwt.sign({ user: username, password: password }, process.env.KEY_SECRET, function(err, token) {
                 if (err) {
                     res.send({ status: false, msg: 'Error login' });
                     console.log(err);

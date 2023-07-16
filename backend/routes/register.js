@@ -3,7 +3,7 @@ const { create } = require('../module/create.js');
 const router = new Router();
 
 router.get('/register', function(req, res) {
-    res.sendFile('reg.html', { root: 'frontend/public' });
+    res.sendFile('register.html', { root: 'frontend/public' });
 });
 
 router.post('/register', create, function(req, res) {

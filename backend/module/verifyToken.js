@@ -11,7 +11,8 @@ function verifyAuth (token, req, res) {
             return console.log(err);
              /*res.send({ status: false, msg: 'Error token' });*/
         } else {
-            res.send({ status: true, content: jwtToken });
+            res.redirect('/home');
+            // res.send({ status: true, content: jwtToken });
         }
     });
 };

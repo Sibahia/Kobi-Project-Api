@@ -1,152 +1,218 @@
-:root {
-  --second-color: #17252A;
-
-  --bgT: #f9f9f9;
-  --bgP: #ffffff;
-  --bgS: #191919;
-  --bgF: #0057ff;
-  --bgK: #014ee3;
-  --bgC: #d1d1d1;
-  --bgM: #a2a0a0;
-  --bgI: #e5ebeb;
+:root 
+{
+    --second-color: #17252A;
+    --bgH: #202124;
+    --bgB: #84B4F8;
+    --bgBP: #63a2fa;
+  
+    --bgT: #f9f9f9;
+    --bgP: #ffffff;
+    --bgS: #191919;
+    --bgF: #0057ff;
+    --bgK: #014ee3;
+    --bgC: #d1d1d1;
+    --bgM: #a2a0a0;
+    --bgI: #e5ebeb;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 1px solid red; */
-  font-family: "Poppins", sans-serif;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body, html {
-  height: 100%;
+body, html
+{
+    height: 100%;
+    width: 100%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  background: var(--bgT);
+body 
+{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background: var(--bgH);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/wavepp.svg');
 }
 
-.container {
-  max-width: 45%;
-  max-height: 70%;
-  margin: auto;
-  display: block;
-  align-items: center;
-  background: var(--bgP);
-  justify-content: center;
-  box-shadow: -3px 18px 21px 4px rgba(0,0,0,0.22);
+.head {
+    height: 62px;
+    display: flex;
+    margin: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .head-logo a {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bgP);
+    text-decoration: none;
+    font-family: 'Roboto';
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav ul li {
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    font-size: 26px;
+    padding: 0 15px;
+    transition: 0.5s;
+    color: var(--bgP);
+    text-decoration: none;
+  }
+  
+  .nav ul li a:hover {
+    color: var(--bgT);
+    padding: 9px 20px;
+    background: var(--bgB);
+    transition: all 0.4s ease 0s;
+    border-radius: 0px 25px 25px 0px;
+  }
+  
+  /*.sign_c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }*/
+  
+  .sign_c a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #sign 
+  {
+    border: none;
+    font-size: 24px;
+    transition: 0.5s;
+    color: var(--bgT);
+    padding: 10px 25px;
+    border-radius: 25px 0px 0px 25px;
+    background: var(--bgB);
+  
+  }
+  
+  #sign:hover 
+  {
+    transition: 0.4s;
+    color: var(--bgT);
+    padding: 10px 35px;
+    border-radius: 100px;
+    /* border-radius: 25px 0px 0px 25px; */
+  }
+
+.box-icon
+{
+    top: -45px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
-.container .logo {
-  top: -50px;
-  padding: 10px;
-  display: flex;
-  position: relative;
-  justify-content: center;
+.box-icon .fa_user 
+{
+    width: 8vh;
+    height: 6vh;
+    display: flex;
+    font-size: 8rem;
+    color: var(--bgT);
+    align-items: center;
+    justify-content: center;
 }
 
-.container .logo .fa_user {
-  width: 8vh;
-  height: 6vh;
-  display: flex;
-  font-size: 8rem;
-  color: var(--bgS);
-  align-items: center;
-  justify-content: center;
+.box
+{
+    gap: 30px;
+    padding: 50px;
+    display: flex;
+    margin: 10% auto;
+    max-width: 460px;
+    max-height: 560px;
+    border-radius: 25px;
+    align-items: center;
+    background: var(--bgH);
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--bgC);
 }
 
-.container .title {
-  padding: 20px;
-  color: var(--bgS);
-  text-align: center;
+.box-inputs
+{
+    position: relative;
+    width: 250px;
 }
 
-.ucontainer {
-  padding: 25px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  border
+.box-inputs input
+{
+    width: 100%;
+    outline: none;
+    font-size: 1em;
+    color: var(--bgT);
+    padding: 15px 15px;
+    border-radius: 5px;
+    background: var(--bgS);
+    border: 1px solid var(--bgC);
 }
 
-.ucontainer .col {
-  display: flex;
-  margin: 40px auto;
-  justify-content: center;
+.box-inputs span
+{
+    left: 0;
+    padding: 15px;
+    font-size: 1em;
+    transition: 0.5s;
+    color: var(--bgM);
+    position: absolute;
+    pointer-events: none;
 }
 
-.ucontainer .cor {
-  margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.box-inputs input:valid ~ span,
+.box-inputs input:focus ~ span
+{
+    padding: 0 10px;
+    color: var(--bgB);
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
+    background: var(--bgH);
+    transform: translateX(10px) translateY(-7px);
 }
 
-.ucontainer .col input {
-  color: #000;
-  width: 60%;
-  height: 30px;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  background: var(--bgI);
+.box-inputs input:valid,
+.box-inputs input:focus
+{
+    border: 2px solid var(--bgB);
 }
 
-.col input:valid,
-.col input:before {
-  border: 2px solid var(--bgF);
-  /* border: none;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--bgF); */
+.box-buttons button
+{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+    color: var(--bgT);
+    border-radius: 5px;
+    padding: 15px 95px;
+    background: var(--bgK);
 }
 
-.ucontainer .col label {
-  font-size: 15px;
-  transition: 0.5s;
-  color: var(--second-color);
-}
-
-/* .ucontainer input:focus {
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--bgF);
-} */
-
-.btn {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn button {
-  border: none;
-  font-size: 20px;
-  color: var(--bgT);
-  padding: 15px 30%;
-  background-color: var(--bgF);
-}
-
-.btn button:hover {
-  transition: 0.5s;
-  background: var(--bgK);
-}
-
-.msg {
-  display: flex;
-  color: var(--bgM);
-  justify-content: center;
-}
-
-.msg a {
-  color: var(--bgF);
-  text-align: none;
-}
-
-.msg a:hover {
-  transition: 0.5s;
-  color: var(--bgK);
+.box-buttons button:hover
+{
+    transition: 0.5s;
+    background: var(--bgF);
 }

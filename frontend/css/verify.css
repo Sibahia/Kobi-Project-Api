@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --second-color: #17252A;
+  --bgH: #202124;
+  --bgH2: #38383a;
+  --bgB: #84B4F8;
+
+  --bgT: #f9f9f9;
+  --bgP: #ffffff;
+  --bgS: #191919;
+  --bgF: #0057ff;
+  --bgK: #014ee3;
+  --bgC: #d1d1d1;
+  --bgM: #a2a0a0;
+  --bgI: #e5ebeb;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background: var(--bgH);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/wavepp.svg');
+}
+
+.box 
+{
+    gap: 20px;
+    border: none;
+    display: flex;
+    margin: 25% auto;
+    max-width: 350px;
+    padding: 0px 20px;
+    max-height: 550px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bgH2);
+    justify-content: center;
+}
+
+.box-top 
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-icon
+{
+    top: -30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-icon i
+{
+    font-size: 6rem;
+    color: var(--bgB);
+}
+
+.box-title h1
+{
+    font-weight: 700;
+    color: var(--bgP);
+}
+
+.box-msg
+{
+    color: var(--bgT);
+    padding: 20px 0px;
+    font-family: 'Roboto';
+}
+
+.box-msg p
+{
+    font-size: 18px;
+}

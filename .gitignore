@@ -1,0 +1,10 @@
+.vscode/settings.json
+backend/env/.env
+backend/src/dbTable.js
+backend/src/token.js
+backend/means/config.json
+backend/database/usersDates.db
+node_modules
+package-lock.json
+frontend/means
+frontend/ignore

@@ -9,8 +9,9 @@ function verifyAuth (token, req, res) {
 
         if (err) {
             return console.log(err);
-             /*res.send({ status: false, msg: 'Error token' });*/
+             res.send({ status: false, msg: 'Error token' });
         } else {
+            res.sendFile('verify.html', { root: 'frontend/public' });
             res.redirect('/home');
             // res.send({ status: true, content: jwtToken });
         }

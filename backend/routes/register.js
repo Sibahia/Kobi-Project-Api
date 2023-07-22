@@ -10,7 +10,7 @@ router.post('/register', createUser, function(req, res) {
 
     const { name, lastName, username, password } = req.body;
 
-    create(name, lastName, username, password, req, res);
+    createUser(name, lastName, username, password, req, res);
 
 });
 

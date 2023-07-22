@@ -10,7 +10,7 @@ router.post('/login', loginUser, function(req, res) {
 
     const { username, password } = req.body;
 
-    auth(username, password, req, res);
+    loginUser(username, password, req, res);
     
 });
 

@@ -1,12 +1,12 @@
 const { Router } = require('express');
-const { auth } = require('../module/auth.js');
+const { loginUser } = require('../module/loginUser.js');
 const router = new Router();
 
 router.get('/login', function (req, res) {
     res.sendFile('auth.html', { root: 'frontend/public' });
 });
 
-router.post('/login', auth, function(req, res) {
+router.post('/login', loginUser, function(req, res) {
 
     const { username, password } = req.body;
 

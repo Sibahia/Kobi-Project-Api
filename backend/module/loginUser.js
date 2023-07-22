@@ -2,9 +2,10 @@ const jwt  = require('jsonwebtoken');
 const { dbUser } = require('../src/db');
 require('dotenv').config({ path: 'backend/env/.env' });
 
-function auth (username, password, req, res) {
+function loginUser (username, password, req, res) {
 
-    dbUser.get(`SELECT * FROM userDates WHERE (username = "${username}")`, function(err, userDatabase) {
+    let dbGetUsersDates = `SELECT * FROM userDates WHERE (username = "${username}")`;
+    dbUser.get(dbGetUsersDates, function(err, userDatabase) {
         if (err) { return console.log(err) };
 
         if (!userDatabase) { return res.send({ status: false, msg: 'El usuario no existe' }) };
@@ -26,7 +27,7 @@ function auth (username, password, req, res) {
     });
 };
 
-module.exports = { auth }
+module.exports = { loginUser }
 
 /*
 

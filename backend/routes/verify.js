@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { verifyAuth } = require('../module/verifyToken.js');
+const { verifyAuth } = require('../module/authenticationUser.js');
 const router = new Router();
 
 router.get('/auth/:token', function(req, res) {

@@ -2,8 +2,10 @@ const jwt = require('jsonwebtoken');
 const { dbUser } = require('../src/db');
 require('dotenv').config({ path: 'backend/env/.env' });
 
-function create (name, lastName, username, password, req, res) {
-    dbUser.get(`SELECT * FROM userDates WHERE username = '${username}'`, function(err, newUserDatabase) {
+function createUser (name, lastName, username, password, req, res) {
+
+    let dbGetUsersDates = `SELECT * FROM userDates WHERE username = '${username}'`;
+    dbUser.get(dbGetUsersDates, function(err, newUserDatabase) {
         if (err) { console.log(err) };
         if (newUserDatabase) { 
             // res.send('NO');  
@@ -11,8 +13,10 @@ function create (name, lastName, username, password, req, res) {
         };
     });
 
-    let dbInsertUserDates = `INSERT INTO userDates (name, lastName, username, password) VALUES('${name}', '${lastName}', '${username}', '${password}')`
-    dbUser.run(`INSERT INTO userDates (name, lastName, username, password) VALUES("${name}", "${lastName}", "${username}", "${password}")`, function(err) {
+
+    // `INSERT INTO userDates (name, lastName, username, password) VALUES("${name}", "${lastName}", "${username}", "${password}")`
+    let dbInsertUserDates = `INSERT INTO userDates (name, lastName, username, password) VALUES('${name}', '${lastName}', '${username}', '${password}')`;
+    dbUser.run(dbInsertUserDates, function(err) {
         if (err) { return console.log(err) };
     });
 
@@ -28,4 +32,4 @@ function create (name, lastName, username, password, req, res) {
 
 };
 
-module.exports = { create }
+module.exports = { createUser }
